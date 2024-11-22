@@ -1,0 +1,20 @@
+/* Page Title Container */
+.titleContainer {
+  text-align: center;
+  margin-top: 200px; /* Updated margin-top */
+}
+
+/* Title Styling */
+.title {
+  font-size: 3rem;
+  color: white; /* Ensure visibility on dark backgrounds */
+}
+
+/* Separator Line */
+.separator {
+  width: 100px; /* Matches the requested width */
+  height: 2px;
+  margin: 10px auto;
+  background: white;
+  border: none;
+}

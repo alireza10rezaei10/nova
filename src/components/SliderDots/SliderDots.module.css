@@ -1,0 +1,68 @@
+/* Dots Container Styling */
+.dotsContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+/* Each Dot Wrapper */
+.dotWrapper {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+/* Circle Progress Animation */
+.progressCircle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  transform: rotate(-90deg); /* Start the progress at the top */
+}
+
+.circle {
+  fill: none;
+  stroke: lightgray; /* Background color of the circle */
+  stroke-width: 2;
+  stroke-dasharray: 100; /* Total length of the circle (percentage-based) */
+  stroke-dashoffset: 100; /* Fully hidden initially */
+  transition: stroke-dashoffset 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.activeCircle {
+  stroke: yellow; /* Active circle color */
+  visibility: visible;
+  animation: fillProgress var(--animation-duration, 5s) linear infinite;
+}
+
+@keyframes fillProgress {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Dot Styling */
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.active {
+  background: yellow; /* Change dot color when active */
+}

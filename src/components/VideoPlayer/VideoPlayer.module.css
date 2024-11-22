@@ -1,0 +1,22 @@
+/* Video Player Container */
+.videoContainer {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Video Player Styling */
+.videoPlayer {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}

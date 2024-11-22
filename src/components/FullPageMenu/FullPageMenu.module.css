@@ -1,0 +1,73 @@
+/* Full Page Menu Container */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu Content Styling */
+.menuContent {
+  color: white;
+  text-align: center;
+}
+
+/* Menu Items */
+.menuItems {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.menuItems li {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.menuItems li:hover {
+  color: yellow;
+}
+
+/* Contact Info Styling */
+.contactInfo {
+  font-size: 1rem;
+  color: white;
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  width: 80%;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,57 @@
+/* Person Card Container */
+.personCard {
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Person Image */
+.personImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Person Name */
+.personName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Person Title */
+.personTitle {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+/* Person Description */
+.personDescription {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Person Button */
+.personButton {
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.personButton:hover {
+  background-color: #3751d0;
+}

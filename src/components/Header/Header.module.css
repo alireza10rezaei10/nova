@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  direction: rtl; /* RTL layout for Farsi */
+}

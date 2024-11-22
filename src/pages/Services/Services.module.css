@@ -1,0 +1,65 @@
+/* Full Services Page */
+.servicesPage {
+  font-family: "Vazir", Arial, sans-serif;
+  color: white;
+  background: url("../../assets/images/services/services-landing.png");
+}
+
+/* First Section */
+.firstSection {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Second Section */
+.secondSection {
+  background: #101820;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.videoPlayer {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.videoText {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+/* Third Section */
+.thirdSection {
+  background: #000000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.image {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.imageText {
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

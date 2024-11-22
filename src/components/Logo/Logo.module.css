@@ -1,0 +1,12 @@
+/* Logo Container */
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Maintain aspect ratio */
+}
