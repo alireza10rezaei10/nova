@@ -44,6 +44,12 @@
   text-align: center;
   position: relative;
   margin-bottom: 40px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrollDown.hidden {
+  opacity: 0; /* Hide the button when scrolled down */
+  pointer-events: none; /* Disable any interaction */
 }
 
 .curvedText {
@@ -81,6 +87,7 @@
   animation: scroll 1.5s infinite ease-in-out;
 }
 
+/* Visibility Animation for Scroll Button */
 @keyframes scroll {
   0% {
     transform: translateY(-8px);
@@ -143,4 +150,29 @@
   gap: 20px;
   padding: 40px 20px;
   background: #101820;
+}
+
+/* Person Card Styles */
+.personCard {
+  opacity: 0;
+  transform: translateX(
+    -50px
+  ); /* Initially, shift left for even-indexed cards */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.personCard.visible {
+  opacity: 1;
+  transform: translateX(0); /* Animate to original position */
+}
+
+/* Person Card Styles for Odd-Indexed Cards */
+.personCard.right {
+  transform: translateX(
+    50px
+  ); /* Initially, shift right for odd-indexed cards */
+}
+
+.personCard.right.visible {
+  transform: translateX(0); /* Animate to original position */
 }

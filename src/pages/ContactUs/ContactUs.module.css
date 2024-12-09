@@ -5,9 +5,9 @@
 
 /* First Section */
 .firstSection {
-  padding-top: 75px;
+  padding-top: 15px;
   height: 100vh; /* Full viewport height */
-  background: url("../../assets/images/contact-us/contact-landing.png")
+  background: url("../../assets/images/contact-us/contact-landing.webp")
     no-repeat center center;
   background-size: cover;
   display: flex;

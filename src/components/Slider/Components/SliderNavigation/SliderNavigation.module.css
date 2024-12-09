@@ -1,0 +1,85 @@
+/* General Button Styling */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+/* Left Button Position */
+.left {
+  left: 20px;
+}
+
+/* Right Button Position */
+.right {
+  right: 20px;
+}
+
+/* Circle SVG Styling */
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  transition: 0.6s ease-in-out; /* Smooth animation */
+}
+.left .circle {
+  transform: rotate(37deg); /* Start animation at the top */
+}
+.right .circle {
+  transform: rotate(217deg); /* Start animation at the top */
+}
+
+.circleBackground {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.5); /* Default circle stroke */
+  stroke-width: 2;
+  stroke-dasharray: 180; /* Circumference of the circle (2πr) */
+  stroke-dashoffset: 70; /* Half of the circle hidden (top and bottom are visible) */
+  transition: 0.6s ease-in-out; /* Smooth animation */
+}
+
+/* Arrow Styling */
+.arrow {
+  position: absolute;
+  font-size: 2rem;
+  color: rgb(201, 201, 201);
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.2s;
+}
+.left .arrow {
+  transform: translateX(20px);
+}
+.right .arrow {
+  transform: translateX(-20px);
+}
+
+/* hover effects */
+.navButton:hover .circleBackground {
+  stroke-dashoffset: 0;
+}
+.navButton:hover.left .circle {
+  transform: rotate(-37deg); /* Start animation at the top */
+}
+.navButton:hover.right .circle {
+  transform: rotate(120deg); /* Start animation at the top */
+}
+.navButton:hover .circleBackground {
+  stroke: white;
+}
+.navButton:hover .arrow {
+  color: white;
+  transform: translateX(-1px);
+  transition: 0.3s ease-in-out;
+}

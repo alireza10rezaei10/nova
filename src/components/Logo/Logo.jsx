@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Logo.module.css";
-import logoImage from "../../assets/images/nova-logo.png"; // Import the logo image
+import logoImage from "../../assets/images/nova-logo.webp"; // Import the logo image
 
 const Logo = () => {
   return (

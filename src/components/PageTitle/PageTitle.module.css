@@ -8,6 +8,9 @@
 .title {
   font-size: 3rem;
   color: white; /* Ensure visibility on dark backgrounds */
+  display: inline-block;
+  overflow: hidden; /* Ensures text stays within bounds */
+  white-space: nowrap; /* Prevents wrapping for typewriter effect */
 }
 
 /* Separator Line */
@@ -17,4 +20,25 @@
   margin: 10px auto;
   background: white;
   border: none;
+}
+
+/* Blinking Cursor */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: white;
+  margin-left: 5px;
+  animation: blink 0.6s step-end infinite;
+}
+
+/* Cursor Blink Animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }

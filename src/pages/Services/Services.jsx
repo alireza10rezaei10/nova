@@ -3,7 +3,7 @@ import styles from "./Services.module.css";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import ScrollDown from "../../components/ScrollDown/ScrollDown";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
-import cameraImage from "../../assets/images/services/camera.png";
+import cameraImage from "../../assets/images/services/camera.webp";
 import video from "../../assets/videos/video.mp4";
 
 const Services = () => {
@@ -18,9 +18,8 @@ const Services = () => {
       {/* Second Section */}
       <div className={styles.secondSection}>
         <VideoPlayer src={video} alt="Service video" />
-        <p className={styles.videoText}>
-          طراحی و توسعه وبسایت
-          <br />
+        <h2 className={styles.title}>طراحی و توسعه وبسایت</h2>
+        <p className={styles.text}>
           تیم نوا با بهره‌گیری از تکنولوژی‌های روز دنیا، وبسایت‌هایی با طراحی
           خلاقانه و کاربرپسند ارائه می‌دهد.
         </p>
@@ -29,10 +28,10 @@ const Services = () => {
       {/* Third Section */}
       <div className={styles.thirdSection}>
         <img className={styles.image} src={cameraImage} alt="Camera services" />
-        <div className={styles.imageText}>
-          <p className={styles.title}>خدمات عکاسی و فیلمبرداری حرفه‌ای</p>
-          <p>ارائه محتوای تصویری جذاب برای نمایش بهتر محصولات و خدمات شما.</p>
-        </div>
+        <h2 className={styles.title}>خدمات عکاسی و فیلمبرداری حرفه‌ای</h2>
+        <p className={styles.text}>
+          ارائه محتوای تصویری جذاب برای نمایش بهتر محصولات و خدمات شما.
+        </p>
       </div>
     </div>
   );
